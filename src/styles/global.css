@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2d5a27;
+  --color-primary-dark: #1e3d1a;
+  --color-accent: #8b4513;
+  --color-cream: #f5f5dc;
+  --font-family-display: 'Playfair Display', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(45, 90, 39, 0.9) 0%, rgba(30, 61, 26, 0.8) 100%);
+}

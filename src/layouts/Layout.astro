@@ -1,0 +1,98 @@
+---
+import '../styles/global.css'
+
+interface Props {
+  title: string;
+  lang?: string;
+}
+
+const { title, lang = 'de' } = Astro.props;
+
+const nav = {
+  de: { home: 'Start', prices: 'Preise', gallery: 'Galerie', location: 'Anfahrt', contact: 'Kontakt', book: 'Buchen' },
+  en: { home: 'Home', prices: 'Prices', gallery: 'Gallery', location: 'Location', contact: 'Contact', book: 'Book' },
+  fr: { home: 'Accueil', prices: 'Tarifs', gallery: 'Galerie', location: 'Accès', contact: 'Contact', book: 'Réserver' }
+}[lang] || nav.de;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wohnmobilstellplatz Hirsch in Bayerbach - Ihr idyllischer Stellplatz in Niederbayern. Ruhige Lage, faire Preise, herzliche Gastfreundschaft." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen bg-stone-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <span class="text-3xl">🦌</span>
+          <span class="font-bold text-xl text-[--color-primary]">Stellplatz Hirsch</span>
+        </a>
+        
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#preise" class="text-gray-700 hover:text-[--color-primary] transition">{nav.prices}</a>
+          <a href="#galerie" class="text-gray-700 hover:text-[--color-primary] transition">{nav.gallery}</a>
+          <a href="#anfahrt" class="text-gray-700 hover:text-[--color-primary] transition">{nav.location}</a>
+          <a href="#kontakt" class="text-gray-700 hover:text-[--color-primary] transition">{nav.contact}</a>
+          <a href="#buchen" class="bg-[--color-primary] text-white px-4 py-2 rounded-lg hover:bg-[--color-primary-dark] transition font-medium">
+            {nav.book}
+          </a>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="flex items-center gap-2 text-sm">
+          <a href="/" class:list={["hover:underline", { "font-bold": lang === 'de' }]}>DE</a>
+          <span class="text-gray-300">|</span>
+          <a href="/en" class:list={["hover:underline", { "font-bold": lang === 'en' }]}>EN</a>
+          <span class="text-gray-300">|</span>
+          <a href="/fr" class:list={["hover:underline", { "font-bold": lang === 'fr' }]}>FR</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-16">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[--color-primary-dark] text-white py-12 mt-16">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+            <span class="text-2xl">🦌</span> Wohnmobilstellplatz Hirsch
+          </h3>
+          <p class="text-green-200 text-sm">
+            Ihr idyllischer Stellplatz in Bayerbach, Niederbayern.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="font-bold mb-3">Kontakt</h4>
+          <p class="text-green-200 text-sm">
+            Au 31<br>
+            94137 Bayerbach<br>
+            Tel: 08563 889
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="font-bold mb-3">Bewertungen</h4>
+          <div class="flex items-center gap-2">
+            <span class="text-yellow-400">★★★★★</span>
+            <span class="text-green-200 text-sm">4,8/5 auf Google</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="max-w-6xl mx-auto px-4 mt-8 pt-8 border-t border-green-700 text-center text-green-300 text-sm">
+        © 2026 Wohnmobilstellplatz Hirsch. Alle Rechte vorbehalten.
+      </div>
+    </footer>
+  </body>
+</html>
