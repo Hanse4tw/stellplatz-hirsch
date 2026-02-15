@@ -4,9 +4,16 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Wohnmobilstellplatz Hirsch | Bayerbach im Bäderdreieck, Niederbayern">
   
-  <!-- Hero Section -->
+  <!-- Hero Section with Auto-Slider -->
   <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 bg-[url('/sommer-stellplatz.jpg')] bg-cover bg-center"></div>
+    <!-- Slideshow Background -->
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 bg-[url('/wohnmobil.webp')] bg-cover bg-center animate-slideshow-1"></div>
+      <div class="absolute inset-0 bg-[url('/stellplaetze.webp')] bg-cover bg-center animate-slideshow-2"></div>
+      <div class="absolute inset-0 bg-[url('/fluss-sommer.webp')] bg-cover bg-center animate-slideshow-3"></div>
+      <div class="absolute inset-0 bg-[url('/sommer-stellplatz.jpg')] bg-cover bg-center animate-slideshow-4"></div>
+      <div class="absolute inset-0 bg-[url('/winter-fluss.jpg')] bg-cover bg-center animate-slideshow-5"></div>
+    </div>
     <div class="absolute inset-0 hero-gradient"></div>
     
     <div class="relative z-10 text-center text-white px-4 max-w-4xl">
@@ -242,8 +249,38 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Gallery Section -->
+  <section id="galerie" class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-[#2d5a27] mb-4" style="font-family: 'Playfair Display', serif;">
+          Impressionen
+        </h2>
+        <p class="text-gray-600">Eindrücke von unserem Stellplatz am Fluss</p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+          <img src="/wohnmobil.webp" alt="Wohnmobil auf dem Stellplatz" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+        <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-lg md:col-span-2">
+          <img src="/stellplaetze.webp" alt="Stellplätze mit Blick auf den Hof" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+        <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-lg md:col-span-2">
+          <img src="/fluss-sommer.webp" alt="Flusslandschaft im Sommer" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+        <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+          <img src="/sommer-stellplatz.jpg" alt="Stellplatz im Sommer" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+        <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-lg col-span-2 md:col-span-3">
+          <img src="/winter-fluss.jpg" alt="Winterlandschaft am Fluss" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Location Section -->
-  <section id="anfahrt" class="py-20 px-4 bg-white">
+  <section id="anfahrt" class="py-20 px-4 bg-stone-100">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold text-[#2d5a27] mb-4 text-center" style="font-family: 'Playfair Display', serif;">
         So finden Sie uns
