@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Wohnmobilstellplatz Hirsch | Bayerbach, Niederbayern">
+<Layout title="Wohnmobilstellplatz Hirsch | Bayerbach im Bäderdreieck, Niederbayern">
   
   <!-- Hero Section -->
   <section class="relative h-[80vh] min-h-[500px] flex items-center justify-center overflow-hidden">
@@ -10,12 +10,12 @@ import Layout from '../layouts/Layout.astro';
     <div class="absolute inset-0 hero-gradient"></div>
     
     <div class="relative z-10 text-center text-white px-4 max-w-4xl">
-      <p class="text-green-200 text-lg mb-4 tracking-wider uppercase">Willkommen in Niederbayern</p>
+      <p class="text-green-200 text-lg mb-4 tracking-wider uppercase">Im Herzen des Bäderdreiecks</p>
       <h1 class="text-5xl md:text-7xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">
         Wohnmobilstellplatz<br>Hirsch
       </h1>
       <p class="text-xl md:text-2xl text-green-100 mb-8 max-w-2xl mx-auto">
-        Ihr idyllischer Stellplatz in Bayerbach. Ruhe, Natur und herzliche Gastfreundschaft.
+        11 Stellplätze im Luftkurort Bayerbach. Nur 4 km zur Rottal Terme – ideal für Thermenliebhaber.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="#buchen" class="bg-white text-[#2d5a27] px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition shadow-lg">
@@ -27,7 +27,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     
-    <!-- Scroll Indicator -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
       <svg class="w-8 h-8 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -38,26 +37,81 @@ import Layout from '../layouts/Layout.astro';
   <!-- Features -->
   <section class="py-16 px-4 bg-white">
     <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-4 gap-8 text-center">
-        <div class="p-6">
-          <div class="text-4xl mb-4">🌳</div>
-          <h3 class="font-bold text-lg mb-2">Ruhige Lage</h3>
-          <p class="text-gray-600">Mitten in der Natur, fernab vom Trubel</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4">
+          <div class="text-3xl mb-3">🏕️</div>
+          <h3 class="font-bold mb-1">11 Stellplätze</h3>
+          <p class="text-gray-600 text-sm">Parzelliert & beleuchtet</p>
         </div>
-        <div class="p-6">
-          <div class="text-4xl mb-4">⚡</div>
-          <h3 class="font-bold text-lg mb-2">Strom & Wasser</h3>
-          <p class="text-gray-600">Versorgung direkt am Stellplatz</p>
+        <div class="p-4">
+          <div class="text-3xl mb-3">🌊</div>
+          <h3 class="font-bold mb-1">Am Fluss</h3>
+          <p class="text-gray-600 text-sm">Idyllische Lage in der Natur</p>
         </div>
-        <div class="p-6">
-          <div class="text-4xl mb-4">🚰</div>
-          <h3 class="font-bold text-lg mb-2">Entsorgung</h3>
-          <p class="text-gray-600">Ver- und Entsorgungsstation</p>
+        <div class="p-4">
+          <div class="text-3xl mb-3">⚡</div>
+          <h3 class="font-bold mb-1">Strom inklusive</h3>
+          <p class="text-gray-600 text-sm">Im Preis enthalten</p>
         </div>
-        <div class="p-6">
-          <div class="text-4xl mb-4">📶</div>
-          <h3 class="font-bold text-lg mb-2">WLAN</h3>
-          <p class="text-gray-600">Kostenloses Internet</p>
+        <div class="p-4">
+          <div class="text-3xl mb-3">🚰</div>
+          <h3 class="font-bold mb-1">V/E-Station</h3>
+          <p class="text-gray-600 text-sm">Auch im Winter nutzbar</p>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl mb-3">📶</div>
+          <h3 class="font-bold mb-1">Gratis WLAN</h3>
+          <p class="text-gray-600 text-sm">Kostenloses Internet</p>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl mb-3">🐕</div>
+          <h3 class="font-bold mb-1">Hunde willkommen</h3>
+          <p class="text-gray-600 text-sm">Vierbeiner erlaubt</p>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl mb-3">🔥</div>
+          <h3 class="font-bold mb-1">Grillen erlaubt</h3>
+          <p class="text-gray-600 text-sm">Gas & Kohle</p>
+        </div>
+        <div class="p-4">
+          <div class="text-3xl mb-3">♿</div>
+          <h3 class="font-bold mb-1">Barrierefrei</h3>
+          <p class="text-gray-600 text-sm">Zugänglich für alle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thermen Section -->
+  <section class="py-20 px-4 bg-gradient-to-br from-blue-50 to-cyan-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-[--color-primary] mb-4" style="font-family: 'Playfair Display', serif;">
+          Im Herzen des Bäderdreiecks
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Drei weltbekannte Thermen in unmittelbarer Nähe – perfekt für Wellness und Erholung
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+          <div class="text-5xl mb-4">🌊</div>
+          <h3 class="font-bold text-xl mb-2">Rottal Terme</h3>
+          <p class="text-3xl font-bold text-[--color-primary] mb-1">4 km</p>
+          <p class="text-gray-600">Bad Birnbach</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+          <div class="text-5xl mb-4">♨️</div>
+          <h3 class="font-bold text-xl mb-2">Therme Bad Griesbach</h3>
+          <p class="text-3xl font-bold text-[--color-primary] mb-1">8 km</p>
+          <p class="text-gray-600">Europas größte Therme</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg text-center">
+          <div class="text-5xl mb-4">💆</div>
+          <h3 class="font-bold text-xl mb-2">Therme Bad Füssing</h3>
+          <p class="text-3xl font-bold text-[--color-primary] mb-1">23 km</p>
+          <p class="text-gray-600">Europas beliebtester Kurort</p>
         </div>
       </div>
     </div>
@@ -71,21 +125,27 @@ import Layout from '../layouts/Layout.astro';
           Willkommen bei Familie Jetzinger
         </h2>
         <p class="text-gray-700 text-lg mb-4">
-          Seit Jahren begrüßen wir Wohnmobilisten aus ganz Europa auf unserem familiären Stellplatz in Bayerbach. 
-          Hier finden Sie Ruhe, Natur und die herzliche Gastfreundschaft Niederbayerns.
+          Seit November 2024 begrüßen wir Wohnmobilisten aus ganz Europa auf unserem familiären 
+          Stellplatz im Luftkurort Bayerbach. Hier finden Sie Ruhe, Natur und die herzliche 
+          Gastfreundschaft Niederbayerns.
         </p>
         <p class="text-gray-700 text-lg mb-6">
-          Unser Stellplatz bietet Ihnen alles, was Sie für einen erholsamen Aufenthalt brauchen – 
-          von Strom- und Wasseranschluss bis hin zur praktischen Ver- und Entsorgungsstation.
+          Unser Stellplatz bietet 11 parzellierte Plätze mit Strom, Wasser und einer 
+          ganzjährig nutzbaren Ver- und Entsorgungsstation – ideal als Ausgangspunkt 
+          für Thermenbesuche und Ausflüge in den Bayerischen Wald.
         </p>
-        <div class="flex items-center gap-4">
-          <div class="flex items-center gap-1 text-yellow-500">
-            <span>★★★★★</span>
-          </div>
-          <span class="text-gray-600">4,8/5 auf Google (4 Bewertungen)</span>
+        
+        <!-- Testimonial -->
+        <div class="bg-white rounded-xl p-6 shadow-md border-l-4 border-[--color-primary]">
+          <p class="text-gray-700 italic mb-3">
+            „Einfacher, ruhiger Stellplatz in freier Natur. Sehr freundlicher Besitzer, 
+            immer mit einem offenen Ohr. Nach unserer Ankunft haben wir sofort Obst 
+            aus dem Garten angeboten bekommen."
+          </p>
+          <p class="text-sm text-gray-500">— Gast auf promobil.de</p>
         </div>
       </div>
-      <div class="bg-[url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800')] bg-cover bg-center h-80 rounded-2xl shadow-xl"></div>
+      <div class="bg-[url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800')] bg-cover bg-center h-96 rounded-2xl shadow-xl"></div>
     </div>
   </section>
 
@@ -95,7 +155,7 @@ import Layout from '../layouts/Layout.astro';
       <h2 class="text-4xl font-bold text-[--color-primary] mb-4" style="font-family: 'Playfair Display', serif;">
         Unsere Preise
       </h2>
-      <p class="text-gray-600 mb-12">Faire Preise für Ihren Aufenthalt</p>
+      <p class="text-gray-600 mb-12">Faire Preise – ganzjährig geöffnet</p>
       
       <div class="bg-gradient-to-br from-[--color-primary] to-[--color-primary-dark] rounded-3xl p-8 md:p-12 text-white shadow-2xl">
         <div class="grid md:grid-cols-2 gap-8">
@@ -103,62 +163,82 @@ import Layout from '../layouts/Layout.astro';
             <h3 class="text-2xl font-bold mb-6">Stellplatz pro Nacht</h3>
             <ul class="space-y-4">
               <li class="flex justify-between items-center border-b border-white/20 pb-3">
-                <span>Wohnmobil inkl. 2 Personen</span>
-                <span class="font-bold text-xl">15 €</span>
+                <span>Wohnmobil inkl. 2 Erwachsene & Kinder</span>
+                <span class="font-bold text-xl">20 €</span>
               </li>
               <li class="flex justify-between items-center border-b border-white/20 pb-3">
-                <span>Weitere Person</span>
-                <span class="font-bold text-xl">3 €</span>
+                <span>Kurtaxe pro Person</span>
+                <span class="font-bold text-xl">1 €</span>
               </li>
               <li class="flex justify-between items-center border-b border-white/20 pb-3">
-                <span>Strom (pauschal)</span>
-                <span class="font-bold text-xl">3 €</span>
-              </li>
-              <li class="flex justify-between items-center">
                 <span>Hund</span>
-                <span class="font-bold text-xl">2 €</span>
+                <span class="font-bold text-xl">kostenlos</span>
               </li>
             </ul>
           </div>
           
           <div class="text-left bg-white/10 rounded-2xl p-6">
-            <h3 class="text-xl font-bold mb-4">Inklusive</h3>
+            <h3 class="text-xl font-bold mb-4">Alles inklusive</h3>
             <ul class="space-y-2 text-green-100">
+              <li class="flex items-center gap-2">
+                <span class="text-green-300">✓</span> Strom
+              </li>
               <li class="flex items-center gap-2">
                 <span class="text-green-300">✓</span> Frischwasser
               </li>
               <li class="flex items-center gap-2">
-                <span class="text-green-300">✓</span> Entsorgung
+                <span class="text-green-300">✓</span> Grauwasser-Entsorgung
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-300">✓</span> Chemie-WC Entsorgung
               </li>
               <li class="flex items-center gap-2">
                 <span class="text-green-300">✓</span> WLAN
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-green-300">✓</span> Entsorgungsstation
               </li>
             </ul>
           </div>
         </div>
       </div>
       
-      <p class="text-gray-500 text-sm mt-6">* Preise können sich ändern. Stand: 2026</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+        <span class="flex items-center gap-1">🕐 Anreise bis 24 Uhr</span>
+        <span class="flex items-center gap-1">📅 Ganzjährig geöffnet</span>
+        <span class="flex items-center gap-1">📝 Buchung erforderlich</span>
+      </div>
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section id="galerie" class="py-20 px-4 bg-stone-100">
+  <!-- Activities Section -->
+  <section class="py-20 px-4 bg-stone-100">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-4xl font-bold text-[--color-primary] mb-4 text-center" style="font-family: 'Playfair Display', serif;">
-        Impressionen
-      </h2>
-      <p class="text-gray-600 mb-12 text-center">Eindrücke von unserem Stellplatz</p>
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold text-[--color-primary] mb-4" style="font-family: 'Playfair Display', serif;">
+          Ausflugsziele in der Umgebung
+        </h2>
+        <p class="text-gray-600">Entdecken Sie Niederbayern</p>
+      </div>
       
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div class="bg-[url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600')] bg-cover bg-center h-48 md:h-64 rounded-xl"></div>
-        <div class="bg-[url('https://images.unsplash.com/photo-1533873984035-25970ab07461?w=600')] bg-cover bg-center h-48 md:h-64 rounded-xl"></div>
-        <div class="bg-[url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=600')] bg-cover bg-center h-48 md:h-64 rounded-xl"></div>
-        <div class="bg-[url('https://images.unsplash.com/photo-1510312305653-8ed496efae75?w=600')] bg-cover bg-center h-48 md:h-64 rounded-xl md:col-span-2"></div>
-        <div class="bg-[url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600')] bg-cover bg-center h-48 md:h-64 rounded-xl"></div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-xl p-5 shadow-md">
+          <div class="text-3xl mb-3">🏰</div>
+          <h3 class="font-bold mb-2">Passau</h3>
+          <p class="text-gray-600 text-sm">Die Dreiflüssestadt mit beeindruckender Altstadt</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-md">
+          <div class="text-3xl mb-3">🌲</div>
+          <h3 class="font-bold mb-2">Bayerischer Wald</h3>
+          <p class="text-gray-600 text-sm">Nationalpark mit Wanderwegen & Wildnis</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-md">
+          <div class="text-3xl mb-3">⛪</div>
+          <h3 class="font-bold mb-2">Kloster Aldersbach</h3>
+          <p class="text-gray-600 text-sm">Barocke Pracht & Brauereigeschichte</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-md">
+          <div class="text-3xl mb-3">🚴</div>
+          <h3 class="font-bold mb-2">Radwege</h3>
+          <p class="text-gray-600 text-sm">Ausgebaute Radwege durchs Rottal</p>
+        </div>
       </div>
     </div>
   </section>
@@ -169,7 +249,7 @@ import Layout from '../layouts/Layout.astro';
       <h2 class="text-4xl font-bold text-[--color-primary] mb-4 text-center" style="font-family: 'Playfair Display', serif;">
         So finden Sie uns
       </h2>
-      <p class="text-gray-600 mb-12 text-center">Nur wenige Minuten von der Autobahn entfernt</p>
+      <p class="text-gray-600 mb-12 text-center">Im Luftkurort Bayerbach, direkt an der Natur</p>
       
       <div class="grid md:grid-cols-2 gap-8 items-center">
         <div>
@@ -187,7 +267,8 @@ import Layout from '../layouts/Layout.astro';
             <h3 class="font-bold text-lg mb-3">🚗 Anfahrt</h3>
             <p class="text-gray-700">
               Von der A3: Ausfahrt Pocking, dann Richtung Bayerbach<br>
-              Von Passau: ca. 30 Minuten
+              Von Passau: ca. 30 Minuten<br>
+              ÖPNV-Haltestelle zu Fuß erreichbar
             </p>
           </div>
           
@@ -220,7 +301,7 @@ import Layout from '../layouts/Layout.astro';
       <h2 class="text-4xl font-bold text-[--color-primary] mb-4 text-center" style="font-family: 'Playfair Display', serif;">
         Jetzt reservieren
       </h2>
-      <p class="text-gray-600 mb-12 text-center">Sichern Sie sich Ihren Stellplatz</p>
+      <p class="text-gray-600 mb-12 text-center">Buchung erforderlich – sichern Sie sich Ihren Stellplatz</p>
       
       <form class="bg-white rounded-3xl shadow-xl p-8">
         <div class="grid md:grid-cols-2 gap-6 mb-6">
@@ -262,17 +343,17 @@ import Layout from '../layouts/Layout.astro';
             </select>
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-2">Strom benötigt?</label>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Hund dabei?</label>
             <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[--color-primary] focus:border-transparent">
-              <option>Ja</option>
               <option>Nein</option>
+              <option>Ja</option>
             </select>
           </div>
         </div>
         
         <div class="mb-6">
           <label class="block text-sm font-medium text-gray-700 mb-2">Nachricht (optional)</label>
-          <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[--color-primary] focus:border-transparent"></textarea>
+          <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[--color-primary] focus:border-transparent" placeholder="z.B. besondere Wünsche, Ankunftszeit..."></textarea>
         </div>
         
         <button type="submit" class="w-full bg-[--color-primary] text-white py-4 rounded-lg font-bold text-lg hover:bg-[--color-primary-dark] transition">
